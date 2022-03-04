@@ -1,4 +1,3 @@
-import "./App.css";
 import axios from "axios";
 import Input from "./components/Input";
 import Display from "./components/Display";
