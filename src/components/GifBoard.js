@@ -26,7 +26,7 @@ const GifBoard = ({
     if (e.target.value) {
       axios
         .get(
-          `http://api.giphy.com/v1/gifs/search?q=${e.target.value}&api_key=${process.env.REACT_APP_KEY}&limit=10`
+          `https://api.giphy.com/v1/gifs/search?q=${e.target.value}&api_key=${process.env.REACT_APP_KEY}&limit=10`
         )
         .then((res) => setGifs(res.data.data));
     } else if (!e.target.value) {

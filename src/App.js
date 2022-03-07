@@ -24,7 +24,7 @@ function App() {
     // "http://api.giphy.com/v1/gifs/trending&api_key=YOUR_API_KEY"
     axios
       .get(
-        `http://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_KEY}`
+        `https://api.giphy.com/v1/gifs/trending?api_key=${process.env.REACT_APP_KEY}`
       )
       .then((res) => {
         setTrending(res.data.data);
