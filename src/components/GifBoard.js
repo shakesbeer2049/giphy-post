@@ -11,7 +11,6 @@ const GifBoard = ({
   trending,
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [gifQuery, setGifQuery] = useState([]);
 
   function onGifClick(id) {
     let gifToAttach = gifs.find((gif) => gif.id === id);
